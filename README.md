@@ -1,2 +1,12 @@
 # FullLinuxBackup
-python script can make full Linux Os backup with all system file
+a python script can make full Linux Os backup with all system file
+
+## How it's work
+the script exuctute some cmd to create archive tar file of your root.it can be restored using linux system.
+it's like you execute the following comands:
+
+> cd /
+to create backup
+> sudo tar -cvpzf backup.tar.gz --exclude=/backup.tar.gz --one-file-system /
+to restore
+> sudo tar -xvpzf /path/to/backup.tar.gz -C /restore/location --numeric-owner
